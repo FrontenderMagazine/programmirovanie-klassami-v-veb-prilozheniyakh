@@ -327,6 +327,8 @@ string.clearing(); // Клара у Карла украла кораллы
 JavaScript нас ни в чем не ограничивает. Мы вообще можем удалить или заменить нативные методы классов. Например, по умолчанию String имеет метод split. Давайте попробуем его удалить.
 
 ```javascript
+console.info('Slpit works'.split(' ')); // ["Slpit", "works"]
+
 String.prototype.split = undefined;
 try {
 	"Where is our split?".split();
