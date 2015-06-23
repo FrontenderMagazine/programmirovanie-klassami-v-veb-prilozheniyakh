@@ -276,7 +276,7 @@ JavaScript устроен таким образом, что все в нем я�
         type: 'cheap'
     });
      
-    Product.prototype.multiplyPrice = function(percent) {
+    Product.prototype.increasePrice = function(percent) {
         var price = this.getPrice();
         return price + (price * percent);
     }
